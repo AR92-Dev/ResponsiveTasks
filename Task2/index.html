@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+    <div class="nav-left">
+        <i class="fa-solid fa-bars" id="menu-btn" style="cursor: pointer;"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <h2>Dashboard</h2>
+    </div>
+    
+    <div class="nav-right">
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <img src="https://ui-avatars.com/api/?name=John+Doe&background=random" alt="avatar">
+    </div>
+</div>
+        </div>
+        <div class="sidebar" id="sidebar">
+             <button class="selected"><i class="fa-solid fa-house"></i> Dashboard</button>
+              <button> <i class="fa-solid fa-chart-line"></i>  Analystic</button>
+              <button> <i class="fa-solid fa-bars"></i> Messages</button>
+              <button> <i class="fa-solid fa-gear"></i>  Settings</button>
+        </div>
+        <div class="main">
+            <div class="maincards">
+                 <h2>Dashboard</h2>
+                 <div class="cards">
+                    <div class="card">
+                <i class="fa-solid fa-house fa-2xl" style="color: blue;"></i>
+                <span>$7,500</span>
+                <p>Total Sales</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user fa-2xl" style="color: green;"></i>
+                <span>250</span>
+                <p>New Users</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-box fa-2xl" style="color: yellow;"></i>
+                <span>3,200</span>
+                <p>New Orders</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-screwdriver-wrench fa-2xl" style="color: red;"></i>
+                <span>50</span>
+                <p>Support Tickets</p>
+            </div>
+                 </div>
+            
+            </div>
+            <div class="main2">
+                <h2>Transactions</h2>
+                <hr>
+                <div class="filter">
+                    <p>Order id</p>
+                    <select>
+                        <option selected>Flags</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                        <td>Order ID</td>
+                        <td>Customers</td>
+                        <td>Status</td>
+                        <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>#10005</td>
+                        <td>John Doe</td>
+                        <td ><span class="badge paid">Paid</span></td>
+                        <td>$120.00</td>
+                        </tr>
+                        <tr>
+                        <td>#10001</td>
+                        <td>Jane Smith</td>
+                        <td ><span class="badge pending">Pending</span></td>
+                        <td>$75.00</td>
+                        </tr>
+                        <tr>
+                        <td>#10003</td>
+                        <td>Mike Johnson</td>
+                        <td ><span class="badge paid">paid</span></td>
+                        <td>$45.00</td>
+                        </tr>
+                        <tr>
+                        <td>#10004</td>
+                        <td>Sarah Brown</td>
+                        <td ><span class="badge pending">Pending</span></td>
+                        <td>$200.00</td>
+                        </tr>
+                        <tr>
+                        <td>#10005</td>
+                        <td>Chris Wilson</td>
+                        <td><span class="badge paid">Paid</span></td>
+                        <td>$99.00</td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                    <tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="pagination">
+                <button class="page-btn text-muted">Previous</button>
+                <div class="page-number">1</div>
+                <button class="page-btn">Next <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </td>
+    </tr>
+</tfoot>
+                </table>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

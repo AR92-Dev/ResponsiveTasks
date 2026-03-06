@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="bg-light pt-5"> <nav class="navbar navbar-expand bg-white border-bottom fixed-top shadow-sm" style="height: 70px;">
+        <div class="container-fluid px-3">
+            
+        <div class="d-flex align-items-center gap-3">
+                <button class="btn border-0 d-md-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-md-inline text-muted fs-5"></i>
+                <h2 class="h5 mb-0 fw-bold">Dashboard</h2>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <div class="input-group input-group-sm  bg-light rounded border">
+                    <span class="input-group-text bg-transparent border-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="Search">
+                </div>
+                <img src="https://ui-avatars.com/api/?name=John+Doe&background=random" alt="avatar" class="rounded-circle" width="35" height="35">
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-2">
+        <div class="row">
+
+            <div class="col-md-3 col-lg-2 bg-dark text-white offcanvas-md offcanvas-start shadow-sm" id="sidebarOffcanvas" style="min-height: calc(100vh - 70px);">
+                
+                <div class="offcanvas-body d-flex flex-column p-3 gap-2 mt-md-3">
+                    <button class="btn btn-primary text-start fw-bold shadow-sm"><i class="fa-solid fa-house me-2 w-20px text-light"></i> Dashboard</button>
+                    <button class="btn text-white text-start hover-bg-secondary"><i class="fa-solid fa-chart-line me-2 w-20px"></i> Analytic</button>
+                    <button class="btn text-white text-start hover-bg-secondary"><i class="fa-solid fa-bars me-2 w-20px"></i> Messages</button>
+                    <button class="btn text-white text-start hover-bg-secondary"><i class="fa-solid fa-gear me-2 w-20px"></i> Settings</button>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-lg-10 ms-auto p-4">
+
+                <div class="bg-white p-4 rounded shadow-sm mb-4 border">
+                    <h2 class="h4 mb-4 fw-bold">Dashboard</h2>
+                    
+                    <div class="row g-3">
+                        
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded p-3 shadow-sm bg-white">
+                                <div>
+                                    <i class="fa-solid fa-house fa-2xl text-primary align-middle"></i>
+                                    <span class="fs-3 fw-bold ms-2 align-middle">$7,500</span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0 fw-bold">Total Sales</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded p-3 shadow-sm bg-white">
+                                <div>
+                                    <i class="fa-solid fa-user fa-2xl text-success align-middle"></i>
+                                    <span class="fs-3 fw-bold ms-2 align-middle">250</span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0 fw-bold">New Users</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded p-3 shadow-sm bg-white">
+                                <div>
+                                    <i class="fa-solid fa-box fa-2xl text-warning align-middle"></i>
+                                    <span class="fs-3 fw-bold ms-2 align-middle">3,200</span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0 fw-bold">New Orders</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded p-3 shadow-sm bg-white">
+                                <div>
+                                    <i class="fa-solid fa-screwdriver-wrench fa-2xl text-danger align-middle"></i>
+                                    <span class="fs-3 fw-bold ms-2 align-middle">50</span>
+                                </div>
+                                <p class="text-muted mt-2 mb-0 fw-bold">Support Tickets</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded shadow-sm border mb-5">
+                    <h2 class="h4 fw-bold">Transactions</h2>
+                    <hr class="text-secondary">
+                    
+                    <div class="d-flex align-items-center gap-3 mb-4 mt-3">
+                        <span class="fw-bold">Order id</span>
+                        <select class="form-select w-auto shadow-sm">
+                            <option selected>Flags</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle border-top">
+                            <thead class="table-light text-secondary">
+                                <tr>
+                                    <th class="py-3">Order ID</th>
+                                    <th class="py-3">Customers</th>
+                                    <th class="py-3">Status</th>
+                                    <th class="py-3">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="border-top-0">
+                                <tr>
+                                    <td class="py-3">#10005</td>
+                                    <td>John Doe</td>
+                                    <td><span class="badge bg-success py-2 px-3 shadow-sm">Paid</span></td>
+                                    <td class="fw-bold">$120.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">#10001</td>
+                                    <td>Jane Smith</td>
+                                    <td><span class="badge bg-warning text-dark py-2 px-3 shadow-sm">Pending</span></td>
+                                    <td class="fw-bold">$75.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">#10003</td>
+                                    <td>Mike Johnson</td>
+                                    <td><span class="badge bg-success py-2 px-3 shadow-sm">Paid</span></td>
+                                    <td class="fw-bold">$45.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center mt-3 gap-2">
+                        <button class="btn btn-link text-muted text-decoration-none">Previous</button>
+                        <span class="border rounded px-3 py-1 bg-white border-secondary">1</span>
+                        <button class="btn btn-link text-dark text-decoration-none">Next <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+
+                </div>
+            </div> </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

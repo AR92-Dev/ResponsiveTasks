@@ -1,0 +1,144 @@
+body{
+    font-family: sans-serif;
+    background-color: #eef0f2;
+    padding: 40px 20px;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 0px 40px;
+}
+.Header a{
+    text-decoration: none;
+    color: black;
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
+.Hero{
+    background-image: url(Sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Hero button{
+    color: white;
+    background-color: #2072c6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px;
+    margin-top: 5px;
+    
+}
+.services{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    margin-top: 10px;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    margin: 0px 0px 40px 0px;
+
+}
+.card{
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    padding: 20px 50px;
+}
+.card i{
+    font-size: 40px;
+}
+.card span{
+    font-size: 12px;
+}
+.about{
+    display: flex;
+    gap: 40px;
+    padding: 20px 50px;
+    align-items: start;
+    justify-items: center;
+}
+.about img{
+    width: 100%;
+}
+.about span{
+    font-size: 12px;
+    width: 100%;
+    font-weight: 540;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #252f3a;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        flex-wrap: wrap; /* CRITICAL: Allows cards to wrap to a new line */
+        justify-content: center;
+    }
+    
+    .card {
+        flex: 20%;
+    }
+    .about{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card{
+        width: 80%;
+        align-items: center;
+        
+    }
+    .Header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .navlinks{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutcontent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

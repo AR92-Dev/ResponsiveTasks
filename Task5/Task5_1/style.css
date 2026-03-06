@@ -1,0 +1,95 @@
+body{
+    background-color: #f0efeb;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    justify-self: center;
+    width: 90%;
+    height: 600px;
+}
+.FirstRow{
+    background-color: #061536;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+}
+
+.FirstRow a,i{
+    text-decoration: none;
+    color: white;
+}
+.SecondRow h2,span,p{
+    text-align: center;
+}
+label{
+    font-size: 10px;
+}
+.SecondRow{
+    background-color: white;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    
+}
+.ThirdRow{
+    background-color: #f0e0c7;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.SecondRow input{
+    padding: 5px;
+    display: block;
+    width: 100%;
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    font-size: 12px;
+}
+.helpinput{
+    width: 50%;
+}
+.helpinput span{
+    font-size: 12px;
+}
+@media (max-width: 767px) {
+    .FirstRow {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        align-items: center; 
+        padding: 20px 0;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        font-size: 20px;
+        align-items: center; 
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .helpinput {
+        width: 90%;
+    }
+
+    .FirstRow img {
+        width: 10em;
+    }
+}
